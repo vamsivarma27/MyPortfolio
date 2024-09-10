@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!---------------------------------------Navigation-------------------------------------------->
+    <section class="fixed-top bg-white">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand text-warning fs-1" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-warning fs-1"
+                id="offcanvasNavbarLabel"
+              >
+                Portfolio
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-dark fs-5 mx-3 links"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark fs-5 mx-3 links" href="#about"
+                    >About Me</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark fs-5 mx-3 links" href="#skills"
+                    >Skills</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-dark fs-5 ms-3 links"
+                    href="#contact-me"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="line" />
+    </section>
+
+    <!-------------------------------------------------------------Main Page------------------------------------------------------------->
+    <div class="container">
+      <div class="row main-page">
+        <div
+          class="col-sm-6 d-flex flex-column align-items-start justify-content-center main-text"
+        >
+          <h3 class="greet">Hello I'm</h3>
+          <h1 class="name">Krishna Vamsi Varma</h1>
+          <h2 class="work text-warning">Software Developer</h2>
+          <p class="para">
+            As a fresh software developer, I'm equipped with foundational coding
+            skills and a keen problem-solving mindset. Eager to learn and
+            innovate, I'm ready to collaborate and deliver solutions that make a
+            difference.
+          </p>
+          <button class="download-btn">Download CV</button>
+        </div>
+        <div
+          class="col-sm-6 d-none d-md-flex flex-column align-items-center justify-content-center img-container"
+        >
+          <div class="image">
+            <img class="img-fluid" src="img/abut.png" alt="Profile Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------About Me------------------------------------------------------------->
+    <div class="container about d-flex flex-column" id="about">
+      <h1 class="about-text text-warning text-center">About Me</h1>
+
+      <div class="row">
+        <div class="col-lg-6 d-none d-lg-inline">
+          <div class="image-about">
+            <img class="img-fluid" src="img/IMG_0305.PNG" alt="image" />
+          </div>
+        </div>
+        <div class="col-lg-6 about-me">
+          <h1 class="about-name">I'm Krishna vamsi varma</h1>
+          <p class="fs-3 m-20">
+            I am an aspiring professional with a deep passion for trending
+            technologies and a solid educational background in Computer Science.
+            I thrive in collaborative environments, working closely with team
+            members to streamline workflows, address bottlenecks, and ensure
+            timely project completion. I’m always ready to step up when needed,
+            ensuring team success by picking up the slack when necessary. Eager
+            to apply my coding skills and passion for problem-solving, I look
+            forward to contributing to a talented engineering team to develop
+            high-quality, innovative solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------My Skills------------------------------------------------------->
+
+    <div class="container skills d-flex flex-column" id="skills">
+      <h1 class="skills-text text-warning text-center">Skills</h1>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pe-5">
+          <h1 class="fs-1">Professional Skills</h1>
+          <p class="fs-4">Some of my skills are given below</p>
+          <div class="content">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">HTML</h1>
+              <span class="fs-2">90%</span>
+            </div>
+            <div class="bar-html bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">CSS</h1>
+              <span class="fs-2">85%</span>
+            </div>
+            <div class="bar-css bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">Bootstrap</h1>
+              <span class="fs-2">85%</span>
+            </div>
+            <div class="bar-bstp bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">JavaScript</h1>
+              <span class="fs-2">60%</span>
+            </div>
+            <div class="bar-js bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">ReactJS</h1>
+              <span class="fs-2">75%</span>
+            </div>
+            <div class="bar-react bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">Java</h1>
+              <span class="fs-2">85%</span>
+            </div>
+            <div class="bar-Java bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">SQL</h1>
+              <span class="fs-2">70%</span>
+            </div>
+            <div class="bar-SQL bg-warning"></div>
+          </div>
+          <div class="content mt-4">
+            <div class="content-text d-flex justify-content-between">
+              <h1 class="ps-2">Git</h1>
+              <span class="fs-2">85%</span>
+            </div>
+            <div class="bar-Git bg-warning"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img
+            class="img-fluid my-10 rounded"
+            src="img/pexels-olia-danilevich-4974912.jpg"
+            alt="Skills Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------Contact Me------------------------------>
+    <div class="container pb-5" id="contact-me">
+      <h1 class="skills-text text-warning text-center mb-5">Contact Me</h1>
+      <form action="javascript:sendmail()" method="post">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label fs-2"
+            >Name</label
+          >
+          <input
+            type="text"
+            class="form-control fs-5"
+            id="exampleFormControlInput1"
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label fs-2"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control fs-5"
+            id="exampleFormControlInput2"
+            placeholder="name@email.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label fs-2"
+            >Feedback</label
+          >
+          <textarea
+            class="form-control fs-5"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            class="btn btn-light btn-outline-warning button"
+            onclick="sendmail()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!------------------------------Footer------------------------------------>
+    <section class="footer">
+      <hr />
+      <div class="container text-center pb-1">
+        <h3 class="text-white">© 2024 Company, Inc</h3>
+      </div>
+    </section>
+  </body>
+</html>

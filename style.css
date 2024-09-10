@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dongle", sans-serif;
+}
+.para{
+  font-size:xx-large;
+}
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+.image-about{
+  margin-left: 0px;
+  border-bottom-left-radius: 25px;
+}
+.image {
+  position: absolute;
+  top: 55vh;
+  
+}
+.line {
+  margin-top: -25px;
+}
+.greet {
+  font-size: 40px;
+}
+.name {
+  font-size: 85px;
+}
+.work {
+  font-size: 63px;
+}
+.download-btn {
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+    animation: rotate 1s ease-in-out infinite alternate;
+  }
+
+.button {
+  padding: 6px 20px !important;
+  border-radius: 10px !important;
+  font-size: 25px !important;
+}
+.main-page {
+  height: 100vh;
+}
+.skills {
+  margin-bottom: 60px;
+}
+.about-text,
+.skills-text {
+  font-size: 60px;
+}
+.about-me {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-name {
+  font-size: 47px;
+}
+
+.bar-html,
+.bar-css,
+.bar-bstp,
+.bar-js ,.bar-react,.bar-Git ,.bar-Java, .bar-SQL {
+  height: 6px;
+  width: 90%;
+  border-radius: 25px;
+}
+.bar-css {
+  width: 85%;
+}
+.bar-bstp {
+  width: 85%;
+}
+.bar-js {
+  width: 60%;
+}
+.bar-react {
+  width: 75%;
+}
+.bar-Java {
+  width: 85%;
+}
+.bar-SQL {
+  width: 70%;
+}
+.bar-Git {
+  width: 85%;
+}
+
+.project {
+  box-shadow: 5px 6px 17px #aaaaaa;
+}
+.footer {
+  background-color: #535353;
+}
+
+.hover {
+  transition: transform 0.3s;
+}
+.hover:hover {
+  transform: scale(1.05);
+}
+.cursor {
+  cursor: pointer;
+}
+
+.content {
+  padding: 5px 10px 0px 0px;
+  box-shadow: 5px 6px 17px #aaaaaa;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .line {
+    margin-top: -10px;
+  }
+  .links {
+    position: relative;
+  }
+  .links:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    background: #ffc107;
+    top: 53px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+  }
+  .links:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+@media (min-width: 768px) {
+  .image {
+    position: absolute;
+    top: 25vh;
+  }
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Makes sure the container stretches to the full height */
+}
+
+.image img {
+  max-width: 100%; /* Ensures the image doesn't overflow the container */
+  max-height: 100%; /* Ensures the image maintains its aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+   border-radius: 40%;
+}
+.image-about img {
+  max-width: 100%; /* Ensures the image doesn't overflow the container */
+  max-height: 100%; /* Ensures the image maintains its aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+   border-radius: 40%;
+}
